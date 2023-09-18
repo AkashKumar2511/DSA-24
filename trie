@@ -4,3 +4,50 @@ Trie (pronounced as "try") or prefix tree :
 
 
 Implementation : https://leetcode.com/problems/implement-trie-prefix-tree/description/
+
+Code : 
+
+class Trie:
+    #Node declaration
+    class TrieNode:
+        def __init__(self):
+            self.children = [None]*26 #children
+            self.isEnd = False #checking if it is the end to the word
+
+
+    def __init__(self):
+        self.root = self.TrieNode() #initializing root as a new node
+
+
+    def insert(self, word: str) -> None:
+        curr_node = self.root #root as current node
+
+        for x in word:
+            idx = ord(x) - ord("a")
+            if(not curr_node.children[idx]): #checking if letter previously exists
+                curr_node.children[idx] = self.TrieNode() #new trie node is intialized
+            curr_node = curr_node.children[idx]
+
+        curr_node.isEnd = True
+
+
+    def search(self, word: str) -> bool:
+        curr_node = self.root
+
+        for x in word:
+            idx = ord(x) - ord("a")
+            if(not curr_node.children[idx]):
+                return False
+            curr_node = curr_node.children[idx] 
+        return curr_node.isEnd
+
+
+    def startsWith(self, prefix: str) -> bool:
+        curr_node = self.root
+
+        for x in prefix:
+            idx = ord(x) - ord("a")
+            if(not curr_node.children[idx]):
+                return False
+            curr_node = curr_node.children[idx] 
+        return True
