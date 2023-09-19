@@ -1,0 +1,14 @@
+- Also known "Using Floyd's Tortoise and Hare algorithm"
+- Approach uses two pointers : Slow, Fast
+- Topics related : Graphs, linked lists
+
+
+For cycle detection : 
+        - Slow pointer moves by 1 steps
+        - Fast pointer moves by 2 steps
+        - If slow and fast pointers meet, it can be concluded that a cycle exist
+
+To find the origin of cycle : 
+        - Re-initialize the slow pointer as root node
+        - Move the slow and fast pointer at same pace 
+        - Slow and fast pointers meet at the origin of the cycle
