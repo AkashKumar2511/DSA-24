@@ -1,0 +1,10 @@
+Bitwise Operators : 
+    - AND : & 
+    - OR : |
+    - XOR : ^   (0 for same and 1 for different)
+    - NOT : ~   (Complement)
+
+Shift operators :
+    - Right shift : >>   ( 5 >> 2 means -> (101) is moved to the right by 2 places )
+    - Left shift : <<  ( 9 << 3 means -> (1001) is moved to the left by 3 places )
+
