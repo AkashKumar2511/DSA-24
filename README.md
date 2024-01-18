@@ -1,6 +1,9 @@
 Notes of Data structures and various algorithms :)
 
-YT : TakeUForward - Striver
 
+Sources :
+-------
+YT : TakeUForward - Striver
 Striver A2Z DSA Sheet
+<br>
 Neetcode - All
