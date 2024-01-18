@@ -1,0 +1,14 @@
+Dynamic Programming :
+-------------------
+
+---- > Optimal substructure + Overlapping subproblems
+
+1) Memoization (Bottom - Up Approach)
+2) Tabulation (Top - Down Approach)
+
+
+
+
+Problems Solved :
+----------------
+1) Fibonacci Numbers
