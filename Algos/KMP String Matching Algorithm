@@ -1,1 +1,7 @@
+#Knuth - Morris - Pratt String Matching Algorithm :
+-------------------------------------------------
 
+##Introduction :
+
+*The Knuth-Morris-Pratt (KMP) algorithm is a string searching algorithm that efficiently finds occurrences of a pattern within a text. 
+*It's particularly useful when you want to find all instances of a given substring within a larger string.
