@@ -1,0 +1,13 @@
+1 => For any "n", "n-1" is (rightmost set bit in n cleared and bits on right of the rightmost set bit are set)
+      ex : 
+            n    = 01011000
+            n-1  = 01010111
+        ---------------------------------------------------------------------
+      -> Toggling all bits from rightmost set bit to the end(right) : n&(n-1)
+         --------------------------------------------------------------------
+            n         = 01011000
+            n-1       = 01010111
+            --------------------
+            n & (n-1) = 01010000
+
+
