@@ -1,0 +1,35 @@
+- Approach : Hashmap + Two Pointers
+---------------------------------
+Two Pointers :
+1) End - Traversal pointer
+2) Start - Minimum window pointer
+- ⇒ Counter and var for valid window check
+
+# Code Template
+
+	n = len(s)
+	mp = dict()
+	#traversing variables
+	start = end = 0
+	#condition checking varaiables
+	ans = -1
+	
+	
+  while(end < n):
+		  #condition check for s[end] in mp
+      if(.......):
+		      ........
+		      .........
+		      
+      #loop to minimize the window using "start" pointer
+      while(......condition......):
+          #updating Counter and var for forwarding the start pointer
+          if(.......start pointer condition check......):
+		          .........
+		          ........
+          start += 1
+      end += 1
+
+- *One thing needs to be mentioned is that when asked to find maximum substring, 
+we should update maximum after the inner while loop to guarantee that the substring is valid. 
+On the other hand, when asked to find minimum substring, we should update minimum inside the inner while loop*
